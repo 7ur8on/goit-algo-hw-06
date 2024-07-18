@@ -8,11 +8,9 @@ class Field:
         return str(self.value)
 
 class Name(Field):
-    # реалізація класу
 		pass
 
 class Phone(Field):
-    # реалізація класу
 		pass
 
 class Record:
@@ -40,13 +38,11 @@ class Record:
             if num.value == number:
                 return num.value
         return None
-    # реалізація класу
 
     def __str__(self):
         return f"Contact name: {self.name.value}, phones: {'; '.join(p.value for p in self.phones)}"
 
 class AddressBook(UserDict):
-    # реалізація класу
     def add_record(self, record):
         self.data[record.name.value] = record
 
